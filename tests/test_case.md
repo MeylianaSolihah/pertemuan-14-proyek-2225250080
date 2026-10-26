@@ -1,12 +1,15 @@
-﻿# Test Case Program
+﻿# Test Case Program Rekap dan Analisis Nilai
 
-| No. | Kondisi Pengujian | Data/Kondisi | Hasil yang Diharapkan |
+| ID | Skenario | Data/Input | Hasil yang Diharapkan |
 |---|---|---|---|
-| 1 | Data normal | Nilai 80 | Data diterima |
-| 2 | Nilai minimum | Nilai 0 | Data diterima |
-| 3 | Nilai maksimum | Nilai 100 | Data diterima |
-| 4 | Batas ketuntasan | Nilai 75 | Status Tuntas |
-| 5 | Di bawah batas | Nilai 70 | Status Belum tuntas |
-| 6 | Nilai di luar rentang | Nilai 110 | Data ditolak |
-| 7 | Nilai bukan angka | Nilai abc | Data ditolak |
-| 8 | Nama kosong | Nama kosong | Data ditolak |
+| TC01 | Data normal | Nilai 80, 70, 90 | Rata-rata 80 dan nilai berhasil dianalisis |
+| TC02 | Nilai batas bawah | Nilai 0 | Nilai diterima |
+| TC03 | Nilai batas atas | Nilai 100 | Nilai diterima |
+| TC04 | Nilai melebihi batas | Nilai 105 | Data ditolak |
+| TC05 | Nilai bukan angka | Nilai abc | Data ditolak |
+| TC06 | File tidak ditemukan | File data tidak tersedia | Program menampilkan pesan dan berhenti dari proses analisis |
+| TC07 | Pemeriksaan kelulusan | Nilai 75 dengan KKM 75 | Siswa dinyatakan lulus |
+| TC08 | Penyimpanan laporan | Data berhasil dianalisis | Laporan tersimpan di output/laporan_nilai.txt |
+
+## Catatan
+Pengujian dilakukan untuk memastikan program dapat membaca data, memvalidasi nilai, menghitung statistik, menentukan kelulusan, dan menyimpan laporan.
